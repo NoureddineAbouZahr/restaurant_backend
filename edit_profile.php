@@ -1,7 +1,6 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 include("connection.php");
-$name=$_POST["name"];
 $F_Name = $_POST["Fname"];
 $L_Name = $_POST["Lname"];
 $email = $_POST["email"];

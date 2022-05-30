@@ -8,9 +8,10 @@ $query->bind_param("s", $email);
 $query->execute();
 $array = $query->get_result();
 $response = [];
-while($user = $array->fetch_assoc()){
-    $response[] = $user;
+while($id = $array->fetch_assoc()){
+    $response[] = $id;
 } 
 $json = json_encode($response);
 echo $json;
+
 ?>

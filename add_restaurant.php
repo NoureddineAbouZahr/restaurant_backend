@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 include("connection.php");
 
 $R_Name = $_POST["R_name"];
